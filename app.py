@@ -2,16 +2,9 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
-from PIL import Image
-# ==========================
-# LOAD CSS
-# ==========================
 
-with open("style.css") as f:
-    st.markdown(
-        f"<style>{f.read()}</style>",
-        unsafe_allow_html=True)
-    #===================
+
+# ==========================
 # PAGE CONFIG
 # ==========================
 st.set_page_config(
@@ -19,15 +12,6 @@ st.set_page_config(
     page_icon="🛒",
     layout="wide",
 )
-
-# ==========================
-# LOAD CSS
-# ==========================
-try:
-    with open("style.css") as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-except:
-    pass
 
 # ==========================
 # LOAD MODEL
